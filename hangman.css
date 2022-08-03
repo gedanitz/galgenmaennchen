@@ -1,0 +1,75 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+div {
+  border: 1px solid black;
+  padding: 5px;
+  margin: 5px;
+}
+
+.content {
+  max-width: 700px;
+  margin: auto;
+  display: grid;
+  grid-template-areas:
+    "display display ."
+    "display display points"
+    "keys    keys    mistakes"
+    "keys    keys    newGame";
+}
+
+.display {
+  grid-area: display;
+}
+
+.points {
+  grid-area: points;
+  min-width: 80px;
+}
+
+.mistakes {
+  grid-area: mistakes;
+}
+
+.keys {
+  grid-area: keys;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.keys button {
+  margin: 2px;
+  padding: 2px;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+}
+
+.newGame {
+  grid-area: newGame;
+}
+
+#maskedSolution {
+  text-align: center;
+}
+
+#won,
+#lost {
+  visibility: hidden;
+  font-size: 2em;
+}
+
+#screen {
+  /* Achtung! Unterschied zwischen Drawingbuffer und Display size
+  siehe: https://webglfundamentals.org/webgl/lessons/webgl-resizing-the-canvas.html
+  width: 300px;
+  height: 300px; */
+  border: 1px solid black;
+  display: block;
+  margin: auto;
+}
