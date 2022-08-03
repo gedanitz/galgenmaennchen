@@ -1,7 +1,6 @@
 Atlantis
 Bernstein
 Clojure
-Doctronic
 Elfenbeinküste
 Frankenstein
 Gamaschen

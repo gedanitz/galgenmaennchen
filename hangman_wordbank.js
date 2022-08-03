@@ -2,7 +2,6 @@
 const WORDBANK = ["Atlantis",
   "Bernstein",
   "Clojure",
-  "Doctronic",
   "Elfenbeinküste",
   "Frankenstein",
   "Gamaschen",
